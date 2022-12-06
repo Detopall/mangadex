@@ -1,0 +1,158 @@
+@font-face {
+	font-family: manga-font;
+	src: url(../fonts/AnimeAceBold-1Jg.ttf);
+}
+
+body {
+	background-color: rgb(6, 6, 70);
+	font-family: manga-font, Arial, sans-serif;
+	font-size: 1.5rem;
+	color: white;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	margin-bottom: 2rem;
+}
+
+header > p {
+	font-size: 1rem;
+}
+
+#display-manga {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+#display-manga > article {
+	margin-right: 5rem;
+	flex: 0 0 5rem;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+#display-manga > article > img {
+	max-width: 17rem;
+}
+
+#display-manga > article > h2 {
+	font-size: 1rem;
+}
+
+#display-manga > article:hover {
+	background-color: lightblue;
+	color: black;
+	text-decoration: underline;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+form > input[type="submit"] {
+	margin-top: 1rem;
+}
+
+button, input[type="submit"] {
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:0.56rem;
+	border:0.125rem solid #d83526;
+	display: inline-block;
+	cursor: pointer;
+	color:#ffffff;
+	font-family: Arial;
+	font-size: 1.1rem;
+	font-weight: bold;
+	padding: 0.43rem 1.1rem;
+	text-decoration: none;
+	text-shadow: -0.125rem 0.06rem 0.69rem #b23e35;
+	font-family: manga-font, Arial, sans-serif;
+}
+
+button:hover, input[type="submit"]:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color:#ce0100;
+}
+
+input[type="number"] {
+	border: none;
+	background-color: lightblue;
+	font-family: manga-font, Arial, sans-serif;
+	font-size: 1.5rem;
+	width: 5rem;
+	border-radius: 0.5rem;
+	text-align: center;
+}
+
+
+.page-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-container > button {
+	margin: 0 2rem; 
+}
+
+/*
+PAGE 2
+*/
+
+#extra-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	margin: 0 5rem;
+}
+
+#extra-info p {
+	line-height: 1.4rem;
+}
+
+#extra-info > img {
+	max-width: 25rem;
+	margin-right: 5rem;
+	border: 0.5rem solid white;
+}
+
+#extra-info .tags li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 0.5rem;
+	border: solid white 0.2rem;
+	padding: 0.5rem;
+	border-radius: 1rem;
+}
+
+#extra-info .links li {
+	margin-bottom: 1rem;
+}
+
+#extra-info .links li a {
+	text-decoration: none;
+	color: white;
+}
+
+#extra-info .links li a:hover {
+	text-decoration: underline;
+}
+
+#extra-info .links {
+	list-style-image: url('../media/li-tag.png');
+}
+
+.hidden {
+	display: none;
+}

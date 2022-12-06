@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/screen.css">
+	<script defer src="assets/js/display-extra-info.js"></script>
+	<script defer src="assets/js/display-manga.js"></script>
+	<script defer src="assets/js/api-connector.js"></script>
+	<script defer src="assets/js/change-page.js"></script>
+	<script defer src="assets/js/script.js"></script>
+
+	<title> Manga Repository </title>
+</head>
+<body>
+
+	<header>
+		<h1> Manga Repository </h1>
+		<p> Made Possible by MangaDex &#169;</p>
+	</header>
+
+
+	<article id="limit-page">
+		<form>
+			<label for="limit">Limit:</label>
+			<input type="number" id="limit" max="100" min="10" value="10">
+			<input type="submit" value="Show Manga">
+		</form>
+	</article>
+
+
+	<div id="display-manga"></div>
+
+	<div id="extra-info" class="hidden"></div>
+
+	<div class="page-container">
+		<button id="prev" data-prev="0">&larr;</button>
+		<p id="page">0</p>
+		<button id="next" data-next="1">&rarr;</button>
+	</div>
+
+	<button id="back" class="hidden"> Back </button>
+</body>
+</html>

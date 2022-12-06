@@ -1,0 +1,35 @@
+/manga
+
+
+title = data.attributes.title.en
+description = data.attributes.description.en
+link = data.attributes.links.raw
+tags = data.attributes.tags
+	1 tag:
+		data.attributes.tags.attributes.name.en
+
+KEEP: 
+ data.relationships.
+		filter on where key = type -> type.cover_art, then
+	get the id.
+
+
+
+/cover/{mangaOrCoverId}
+
+give the coverId
+
+
+
+RETRIEVE COVERS:
+https://uploads.mangadex.org/covers/:manga-id/:cover-filename.jpg
+
+
+//console.log(index.attributes.title.en);
+//console.log(index.attributes.description.en); -> show description?: popup
+//console.log(index.attributes.links); -> available links
+//--
+//const tags = [];
+//index.attributes.tags.map(tag => tags.push(tag.attributes.name.en));
+//--
+//console.log(index.relationships.filter(relIndex => relIndex.type === "cover_art")[0].id);
